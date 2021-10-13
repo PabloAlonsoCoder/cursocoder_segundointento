@@ -1,0 +1,38 @@
+@import "./responsive";
+
+.navBar {
+  background-color: #1c171d;
+  width: 60%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include medium {
+    width: 100%;
+  }
+
+  .navBar__menu {
+    list-style: none;
+    display: inline-block;
+
+    .navBar__menu__item {
+      display: inline-block;
+      margin-right: 30px;
+      position: relative;
+
+      .navBar__menu__item__a {
+        list-style: none;
+        font-weight: 900;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #f9f9f9;
+        transition-duration: 0.5s;
+        @include medium {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
